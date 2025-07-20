@@ -4,9 +4,11 @@ import torch.optim as optim
 import torch.nn.functional as F
 from resnet18 import ResNet18
 import torchvision.transforms as transforms, torchvision, matplotlib.pyplot as plt
+
 model = ResNet18()
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(model.parameters(), lr=0.001, momentum=0.9)
+
 print("Downloading dataset")
 trainset = torchvision.datasets.CIFAR10(root='./data', 
                                         train=True, 
@@ -45,7 +47,7 @@ correct = 0
 total = 0
 model.eval()  # Set model to evaluation mode
 with torch.no_grad():
-    for data in testloader:  # Or use testloader if you have a separate test set
+    for data in testloader:
         images, labels = data
         outputs = model(images)
         _, predicted = torch.max(outputs.data, 1)
