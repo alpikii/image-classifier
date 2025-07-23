@@ -1,0 +1,18 @@
+Downloading dataset
+Counter({3: 7500, 6: 5000, 9: 5000, 4: 5000, 1: 5000, 2: 5000, 7: 5000, 8: 5000, 0: 5000, 5: 2500})
+Starting training...
+Epoch 0 loss: 1.3734238331416249
+Epoch 1 loss: 0.8975164193756133
+Epoch 2 loss: 0.7012628472020477
+Epoch 3 loss: 0.576560904690288
+Epoch 4 loss: 0.4672144848617772
+Epoch 5 loss: 0.38905050624083726
+Epoch 6 loss: 0.3107625204921025
+Epoch 7 loss: 0.2526473854957716
+Epoch 8 loss: 0.2039279175099227
+Epoch 9 loss: 0.15751569044499053
+Training done
+Downloading test dataset
+Counter({3: 1000, 8: 1000, 0: 1000, 6: 1000, 1: 1000, 9: 1000, 5: 1000, 7: 1000, 4: 1000, 2: 1000})
+Testing accuracy...
+Accuracy on test set: 78.07%
